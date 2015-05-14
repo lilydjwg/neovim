@@ -779,6 +779,11 @@ void ex_profile(exarg_T *eap)
   }
 }
 
+void ex_lua(exarg_T *eap)
+{
+  script_host_execute("lua", eap);
+}
+
 void ex_python(exarg_T *eap)
 {
   script_host_execute("python", eap);
